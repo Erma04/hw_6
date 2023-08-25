@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         EditText password = findViewById(R.id.edit_password);
         Button button= findViewById(R.id.button_sign);
         TextView textView2 = findViewById(R.id.text_view2);
+        TextView entry= findViewById(R.id.text_entry);
 
 
        login.addTextChangedListener(new TextWatcher() {
@@ -52,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
                     password.setVisibility(View.GONE);
                     button.setVisibility(View.GONE);
                     textView2.setVisibility(View.GONE);
+                    entry.setVisibility(View.GONE);
+
 
                 }else{
                     Toast.makeText(MainActivity.this,"Неправильный логин или пароль",Toast.LENGTH_SHORT).show();
